@@ -1,6 +1,14 @@
-# R for travis: see documentation at https://docs.travis-ci.com/user/languages/r
+# R for travis: see documentation at
+# https://docs.travis-ci.com/user/languages/r
+# 
+# R build script
+# https://github.com/travis-ci/travis-build/blob/master/lib/travis/build/script/r.rb
 
-language: R
-cache: packages
+language: r
+r:
+  - 4.1.2
 before_install:
   - cd vardpoor
+notifications:
+  email:
+    - rcsb@csp.gov.lv
